@@ -32,6 +32,9 @@ Desenvolver uma estratégia para criptografar os dados do cartão de crédito do
  - Cadastrar usuários, sabendo que para seu cadastro será necessário a indicação de pelo menos um cartão de crédito. 
  - Listar os dados de um usuário, de uma compra ou de um cartão.
 
+## Diagrama de Funcionalidade 
+- Link para https://mm.tt/map/2748479503?t=FSUK7ele8g
+
 ## Representação simples das estruturas
 
 ![enter](https://i.ibb.co/NZq9wgK/usuario.png)
