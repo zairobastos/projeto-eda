@@ -1,8 +1,8 @@
 # Atividade I - EDA
 #### Equipe :
- _1. Francisco André Rodrigues Farias - 475923_
-_2. Luiz Zairo Bastos Viana - 499995_
-_3. Jean Camelo Silva - 420568_
+ _1. Francisco André Rodrigues Farias - 475923_ <br />
+_2. Luiz Zairo Bastos Viana - 499995_ <br />
+_3. Jean Camelo Silva - 420568_ <br />
 
 ## Introdução
 Uma Loja Virtual deseja implantar um sistema de gerenciamento das compras pagas por seus clientes (usuários), através do uso de cartões de crédito. Desta forma, o sistema deverá ser capaz de cadastrar uma transação eletrônica de uma compra e das informações do pagador (nome completo, número do cartão, bandeira e código de segurança).
