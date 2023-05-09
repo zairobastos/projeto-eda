@@ -14,7 +14,7 @@ Desenvolver uma estratégia para criptografar os dados do cartão de crédito do
 
 ## Informações necessárias 
 
- - **Cartão de crédito** = Número único, Nome do titular e Data de validade.
+ - **Cartão de crédito** = Número único, Nome do titular, Data de validade, bandeira e código de segurança.
  -  **Sobre a compra** = Itens da compra (descrição), Valor da compra e usuário.
  - **Usuário** = CPF, Nome Completo, Endereço e Cartões de crédito cadastrados;
 
