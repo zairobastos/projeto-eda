@@ -9,7 +9,7 @@ import os
 class Main():
 
     menu = Menu()
-    tabelas = Tabela(tamCartao=3, tamUsuario=31)
+    tabelas = Tabela(tamCartao=31, tamUsuario=31)
 
     def opcao(self):
         repete = True
@@ -24,24 +24,7 @@ class Main():
                                     dataValidade, bandeiraCartao, codigoSeguranca)
                     self.tabelas.hashCompletoCartao(cartao)
                     taxa, num_el = self.tabelas.taxaOcupacaoCartao()
-                    if (taxa >= 70):
-                        self.tabelas.tamMaxCart *= 2
-                        aux = self.tabelas.tabelaCartao
-                        self.tabelas.tabelaCartao = [
-                            None] * self.tabelas.tamMaxCart
-                        c = 0
-                        for key in aux:
-                            if key is not None:
-                                hash_value = self.tabelas.hashCompletoCartao(
-                                    key)
-                                if hash_value is not None:  # Verificação adicional para evitar índices nulos
-                                    while self.tabelas.tabelaCartao[hash_value] is not None:
-                                        hash_value = (
-                                            hash_value + 1) % self.tabelas.tamMaxCart
-                                    self.tabelas.tabelaCartao[hash_value] = key
-                            if (c >= (int(self.tabelas.tamMaxCart/2))):
-                                break
-                            c += 1
+                    self.tabelas.ajustarTabela(taxa)
 
                 elif (opc == 2):
                     os.system("clear") or None
