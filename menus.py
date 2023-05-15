@@ -33,8 +33,10 @@ class Menu():
         print("======================================")
         print("MENU - Selecione uma das opções abaixo")
         print("======================================\n")
+        print("0. SAIR")
         print("1. Cadastrar Cartão")
         print("2. Cadastrar Usuário")
         print("3. Cadastrar Compra")
+        print("4. Listar Cartões")
         opc = int(input("Digite a opção: "))
         return opc
