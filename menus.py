@@ -20,6 +20,15 @@ class Menu():
         cartUsu = int(input("Número do Cartão: "))
         return nomeUsu, cpfUsua, endeUsu, cartUsu
 
+    def formUsuario2(self):
+        print("=============================")
+        print("     Cadastro de usuário     ")
+        print("=============================\n")
+        nomeUsu = input("Nome do Usuário: ")
+        cpfUsua = int(input("CPF: "))
+        endeUsu = input("Endereço do Usuário: ")
+        return nomeUsu, cpfUsua, endeUsu
+
     def formCompra(self):
         print("============================")
         print("     Cadastro de compra     ")
@@ -38,5 +47,13 @@ class Menu():
         print("2. Cadastrar Usuário")
         print("3. Cadastrar Compra")
         print("4. Listar Cartões")
+        print("5. Listar Usuários")
         opc = int(input("Digite a opção: "))
         return opc
+
+    def novoCartao(self):
+        print("Deseja adicionar outro cartão?")
+        print("1. sim")
+        print("2. Não")
+        ad_cart = int(input("Opção: "))
+        return ad_cart
