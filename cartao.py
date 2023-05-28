@@ -1,3 +1,6 @@
+from arvoreAVL import NoAVL
+
+
 class Cartao:
     def __init__(self, numeroCartao, nomeTitular, dataValidade, bandeira, codSeguranca):
         self.numeroCartao = numeroCartao
@@ -5,6 +8,7 @@ class Cartao:
         self.dataValidade = dataValidade
         self.bandeira = bandeira
         self.codSeguranca = codSeguranca
+        self.comprasAVL = None
 
     def __str__(self) -> str:
         return f'Cartao(Número do Cartão = {self.numeroCartao}, Nome do Titular = {self.nomeTitular},  Data de Validade = {self.dataValidade}, Bandeira = {self.bandeira}, Código de Segurança = {self.codSeguranca})'

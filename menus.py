@@ -29,6 +29,20 @@ class Menu():
         endeUsu = input("Endereço do Usuário: ")
         return nomeUsu, cpfUsua, endeUsu
 
+    def formListaUsuario(self):
+        print("====================================")
+        print("     Listar dados de um usuário     ")
+        print("====================================\n")
+        cpf = int(input("CPF: "))
+        return cpf
+
+    def formListaCartao(self):
+        print("===================================")
+        print("     Listar dados de um cartão     ")
+        print("===================================\n")
+        num = int(input("Número do Cartão: "))
+        return num
+
     def formCompra(self):
         print("============================")
         print("     Cadastro de compra     ")
@@ -37,6 +51,14 @@ class Menu():
         valoComp = float(input("Valor da compra: "))
         usuaComp = int(input("CPF: "))
         return itemComp, valoComp, usuaComp
+
+    def formCompra2(self):
+        print("============================")
+        print("     Cadastro de compra     ")
+        print("============================\n")
+        itemComp = input("Itens comprados: ")
+        valoComp = float(input("Valor da compra: "))
+        return itemComp, valoComp
 
     def menu(self):
         print("======================================")
@@ -48,6 +70,9 @@ class Menu():
         print("3. Cadastrar Compra")
         print("4. Listar Cartões")
         print("5. Listar Usuários")
+        print("6. Exibir dados de um usuário")
+        print("7. Exibir dados do Cartão")
+        print("8. Exibir compras de um cartão")
         opc = int(input("Digite a opção: "))
         return opc
 
