@@ -40,9 +40,9 @@ class Tabela:
             w = self.hash2Usuario(usuario.cpf)
             rh = (i+w) % self.tamMaxCart
             while (self.tabelaUsuario[rh] is not None):
-                rh = (rh+w) % (self.tamMaxCart)
                 if self.tabelaUsuario[rh].cpf == usuario.cpf:
                     return False
+                rh = (rh+w) % (self.tamMaxCart)
             self.tabelaUsuario[rh] = usuario
             return True
 
